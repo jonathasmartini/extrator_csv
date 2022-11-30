@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atendimento</title>
+</head>
+
+<body>
+<h1>Atendimento</h1>
+<table>
+		<thead>
+				<tr>
+			<th>Atendimento</th>
+			<th>Data Atendimento</th>
+			<th>Convênio</th>
+				</tr>
+		</thead>
+
+
+	<tbody>
+
+<tr>
+<td><a href="{% url 'index' %}">{{ atendimento.cd_atendimento}} </a></td>
+<td>{{ atendimento.dt_atendimento}} </td>
+<td>{{ atendimento.cd_convenio}} </td>
+</tr>
+
+	</tbody>
+	</table>
+</body>
+</html>
